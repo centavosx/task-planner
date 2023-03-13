@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dash">
+
+    <fragment
+        android:id="@+id/nav_dash"
+        android:name="com.vll.planner.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dash"
+        tools:layout="@layout/dash" />
+
+    <fragment
+        android:id="@+id/nav_time"
+        android:name="com.vll.planner.ui.time.TimeFragments"
+        android:label="@string/menu_time"
+        tools:layout="@layout/time" />
+
+    <fragment
+        android:id="@+id/nav_events"
+        android:name="com.vll.planner.ui.events.EventsFragments"
+        android:label="@string/menu_events"
+        tools:layout="@layout/events" />
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.vll.planner.ui.notes.NotesFragments"
+        android:label="@string/menu_notes"
+        tools:layout="@layout/notes" />
+    <fragment
+        android:id="@+id/nav_addnotes"
+        android:name="com.vll.planner.ui.addanote.AddNote"
+        android:label="@string/menu_addnotes"
+        tools:layout="@layout/addnote" />
+    <fragment
+        android:id="@+id/nav_addevent"
+        android:name="com.vll.planner.ui.addevent.AddEvent"
+        android:label="@string/menu_addevent"
+        tools:layout="@layout/addevent" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.vll.planner.ui.login.Login"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login" />
+    <fragment
+        android:id="@+id/nav_reg"
+        android:name="com.vll.planner.ui.register.Register"
+        android:label="@string/menu_reg"
+        tools:layout="@layout/register" />
+
+</navigation>

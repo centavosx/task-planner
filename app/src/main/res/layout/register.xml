@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF2E3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="80px"
+    android:paddingRight="50px"
+    android:paddingBottom="80px"
+    tools:context=".ui.register.Register">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_marginBottom="20px"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="Register"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/pwreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="50px"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/pwreg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="50px"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBF2E3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/willsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:text="Register" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#FBF2E3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/willsave3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:layout_weight="1"
+            android:text="Login" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/getparentlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C38B5F"
+    android:orientation="vertical"
+    android:padding="30px">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/thngstodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Delete this Note???"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/notfinished"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="30px"
+            android:layout_marginRight="30px"
+            android:layout_weight="1"
+            android:background="@drawable/cancel"
+            app:backgroundTint="@android:color/holo_red_dark"
+            app:iconPadding="0dp" />
+
+        <Button
+            android:id="@+id/done"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/check"
+            app:backgroundTint="@color/black"
+            app:iconPadding="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

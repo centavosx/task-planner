@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="50px"
+    android:paddingTop="20px"
+    android:paddingRight="50px"
+    android:paddingBottom="80px"
+    tools:context=".ui.time.TimeFragments">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10px">
+
+        <TextView
+            android:id="@+id/todaydate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="left|end"
+            android:text="Date Today"
+            android:textColor="#050505"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/todaydate2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center|end"
+            android:text="Weekly Schedule"
+            android:textColor="#070707"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FBF2E3"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:padding="15px">
+
+                <TableRow
+                    android:id="@+id/row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/timeampm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Time"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/mon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Monday"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tues"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Tuesday"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/wed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Wednesday"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/thurs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Thursday"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fri"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Friday"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Saturday"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Sunday"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="row">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe0"
+                        android:text="1:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe0"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe0"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe0"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe0"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe0"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe0"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe0"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe1"
+                        android:text="2:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe1"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe1"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe1"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe1"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe1"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe1"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe1"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe2"
+                        android:text="3:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe2"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe2"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe2"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe2"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe2"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe2"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe2"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe3"
+                        android:text="4:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe3"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe3"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe3"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe3"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe3"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe3"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe3"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="row6">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe4"
+                        android:text="5:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe4"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe4"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe4"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe4"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe4"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe4"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe4"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe5"
+                        android:text="6:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe5"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe5"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe5"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe5"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe5"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe5"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe5"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe6"
+                        android:text="7:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe6"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe6"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe6"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe6"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe6"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe6"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe6"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row9">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe7"
+                        android:text="8:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe7"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe7"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe7"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe7"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe7"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe7"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe7"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe8"
+                        android:text="9:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe8"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe8"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe8"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe8"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe8"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe8"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe8"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row11">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe9"
+                        android:text="10:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe9"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe9"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe9"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe9"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe9"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe9"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe9"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row12">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe10"
+                        android:text="11:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe10"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe10"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe10"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe10"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe10"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe10"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe10"
+                        android:text="----" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="row13">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:tag="thurswe11"
+                        android:text="12:00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="tueswe11"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="monwe11"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="wedwe11"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="friwe11"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="satwe11"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="timewe11"
+                        android:text="----" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:tag="sunwe11"
+                        android:text="----" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="50px"
+        android:paddingTop="30px"
+        android:paddingRight="50px">
+
+        <Button
+            android:id="@+id/btnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15px"
+            android:layout_marginLeft="15px"
+            android:layout_marginEnd="15px"
+            android:layout_marginRight="15px"
+            android:layout_weight="1"
+            android:text="AM" />
+
+        <Button
+            android:id="@+id/btnpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15px"
+            android:layout_marginLeft="15px"
+            android:layout_marginEnd="15px"
+            android:layout_marginRight="15px"
+            android:layout_weight="1"
+            android:text="PM" />
+    </LinearLayout>
+
+
+</LinearLayout>

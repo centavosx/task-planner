@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TaskPlan</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <item name="my_id" type="id"/>
+    <item name="mond1" type="id"/>
+    <item name="mond2" type="id"/>
+    <string name="menu_dash">Dashboard</string>
+    <string name="menu_time">Time Table</string>
+    <string name="menu_events">Agenda / Events</string>
+    <string name="menu_notes">Notes</string>
+    <string name="menu_addnotes">Add Notes</string>
+    <string name="menu_addevent">Add Event</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_reg">Register</string>
+</resources>
